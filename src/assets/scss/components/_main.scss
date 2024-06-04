@@ -1,0 +1,24 @@
+.turtle {
+  .mainVideo {
+    background-color: $main-bgc;
+    // width: 1200px;
+    height: 80vh;
+    padding: 20px 0;
+    img {
+      height: 100%;
+      display: block;
+      margin: 0 auto;
+      animation: slide-in 0.8s ease-in-out;
+    }
+  }
+}
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
