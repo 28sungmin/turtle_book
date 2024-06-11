@@ -1,6 +1,6 @@
-const SectionSlide = ({ h5Props, pProps, ...props }) => {
+const SectionSlide = ({ h5Props, pProps, bgProps, ...props }) => {
   return (
-    <div {...props}>
+    <div {...props} style={{ backgroundColor: bgProps }}>
       <h5>{h5Props}</h5>
       <p>{pProps}</p>
     </div>
