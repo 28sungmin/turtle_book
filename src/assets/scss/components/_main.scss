@@ -1,24 +1,112 @@
 .turtle {
   .mainVideo {
-    background-color: $main-bgc;
-    // width: 1200px;
-    height: 80vh;
+    height: 60vh;
     padding: 20px 0;
-    img {
+    .video_space {
       height: 100%;
-      display: block;
-      margin: 0 auto;
-      animation: slide-in 0.8s ease-in-out;
+      video {
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+      }
     }
   }
-}
-@keyframes slide-in {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
+  .content1 {
+    width: 1200px;
+    margin: 0 auto;
+    .section-title {
+      font-size: 40px;
+      text-align: center;
+      font-style: italic;
+    }
+    .img-div {
+      .img-title {
+        font-size: 30px;
+        margin-top: 100px;
+        text-align: center;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        img:nth-child(1) {
+          display: block;
+          height: 270px;
+          margin-right: 40px;
+        }
+        img:nth-child(2) {
+          display: block;
+          height: 500px;
+          margin-left: 40px;
+        }
+      }
+    }
   }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
+  // 이미지 슬라이드
+  .slider_all {
+    width: 1200px;
+    height: 500px;
+    background-color: #faa;
+    margin: 100px auto;
+    // position: relative;
+    overflow: hidden;
+    .slider_box {
+      width: 270px;
+      height: 360px;
+      padding: 10px 0;
+      background-color: #ffa;
+      // margin-left: 500px;
+      // display: flex;
+      .slider {
+        width: 1200%;
+        height: 100%;
+        padding: 10px 0;
+        background-color: #aaf;
+        display: flex;
+        .slide {
+          width: calc(100% / 12 - 20px);
+          height: 100%;
+          margin: 0 10px;
+          background-color: #aff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-radius: 15px;
+          h5 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+          }
+          p {
+            font-size: 1.7rem;
+            margin-top: 5px;
+          }
+          &:hover {
+            box-shadow: 5px 5px 30px;
+          }
+        }
+      }
+    }
+  }
+  .arrow {
+    display: flex;
+    background-color: #ddd;
+    height: 100%;
+    .prev_arrow {
+      border: none;
+      background-color: #000;
+      // top: -40%;
+      img {
+        height: 50px;
+      }
+    }
+    .next_arrow {
+      border: none;
+      background-color: #000;
+      img {
+        height: 50px;
+      }
+    }
   }
 }
